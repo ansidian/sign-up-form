@@ -32,10 +32,30 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
 #root, #__next {
   isolation: isolate;
+}
+
+.row-container {
+  display: flex;
+}
+
+.row-container > * {
+  width: 30%;
+}
+
+.form {
+  background-size: cover;
+}
+
+.splash-image {
+  width: 35%;
+  height: 100vh;
+  object-fit: cover;
+
 }
