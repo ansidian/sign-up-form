@@ -2,6 +2,8 @@
 
 ![Project Preview](https://github.com/user-attachments/assets/a9f1a3d4-c458-4c72-a2e1-1193fa49536a)
 
+## [Live Preview](https://ansidian.github.io/sign-up-form/)
+
 A sign-up form for an imaginary service, built as part of The Odin Project curriculum. This project demonstrates implementation of form validation, CSS styling techniques, and practical web development principles.
 
 ## Technologies Used
