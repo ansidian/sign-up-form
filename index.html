@@ -11,7 +11,7 @@
 <body>
 <div class="container">
   <img alt="Splash image for sign-up form" class="image" src="/img/photo-1585202900225-6d3ac20a6962.avif">
-  <form id="create-account" action="" method="post">
+  <form action="" id="create-account" method="post">
     <div class="form-heading">
       <h1 class="heading">This is not a real online service! You know you need something like this in your life to
         help you realize your deepest dreams.</h1>
@@ -20,32 +20,38 @@
         <h2 class="form-title">Let's do this!</h2>
         <div class="form-grid">
           <div class="form-group">
-            <label for="firstName">First Name</label>
+            <label for="firstName" class="required">First Name</label>
             <input id="firstName" name="firstName" placeholder="Thor" required type="text">
           </div>
           <div class="form-group">
-            <label for="lastName">Last Name</label>
+            <label for="lastName" class="required">Last Name</label>
             <input id="lastName" name="lastName" placeholder="Odinson" required type="text">
           </div>
           <div class="form-group">
-            <label for="telephone">Phone Number</label>
-            <input id="telephone" name="telephone" placeholder="6264206969" required type="tel">
+            <label for="telephone" class="required">Phone Number</label>
+            <input class="telephone" id="telephone" name="telephone" pattern="^\d{10}$" placeholder="6264206969"
+                   required type="tel"
+            >
+            <span class="error-message" data-error="Please enter a 10-digit phone number: 6265425808"></span>
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email" class="required">Email</label>
             <input id="email" name="email" placeholder="thorodinson@asgard.com" required type="email">
+            <span class="error-message" data-error="Please enter a valid email address: johndoe@email.com"></span>
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password" name="password" placeholder="" required type="password">
+            <label for="password" class="required">Password</label>
+            <input id="password" name="password" placeholder="" required type="password" minlength="8">
+            <span class="error-message" data-error="Passwords must have at least 8 characters."></span>
           </div>
           <div class="form-group">
-            <label for="confirm-password">Confirm Password</label>
-            <input id="confirm-password" name="confirm-password" placeholder="" required type="password">
+            <label for="confirm-password" class="required">Confirm Password</label>
+            <input id="confirm-password" name="confirm-password" placeholder="" required type="password" minlength="8">
+            <span class="error-message" data-error="Passwords must have at least 8 characters."></span>
           </div>
         </div>
       </div>
-      <button class="create-account" type="submit" form="create-account">Create Account</button>
+      <button class="create-account" form="create-account" type="submit">Create Account</button>
     </div>
     <p class="login-button">Already have an account? <a href="">Log in</a></p>
   </form>
