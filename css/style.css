@@ -16,6 +16,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+  font-family: norsebold;
+  src: url("../Norse-Bold.otf");
+}
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -32,10 +37,57 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
 #root, #__next {
   isolation: isolate;
+
 }
+
+:root {
+  --bg-width: 40%;
+}
+
+.logo-text {
+  font-family: norsebold;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.logo-image {
+  width: 6rem;
+  height: auto
+}
+
+.logo-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.background-image {
+  background-image: url("../img/bg-image.avif");
+  background-size: cover;
+  background-position: center;
+  width: var(--bg-width);
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-column,
+.right-column {
+  width: var(--bg-width);
+  height: 100vh;
+}
+
