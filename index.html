@@ -9,28 +9,46 @@
   <title>Beautiful Sign-up Form</title>
 </head>
 <body>
-<div class="row-container">
-  <img alt="Splash image for sign-up form" class="splash-image" src="/img/photo-1585202900225-6d3ac20a6962.avif">
-  <div class="form">
-    <h1 class="headline">This is not a real online service! You know you need something like this in your life to help
-      you realize your deepest dreams.</h1>
-    <p>You <em>know</em> you want to.</p>
-    <form action="" method="post">
-      <h2>Let's do this!</h2>
-      <label for="firstName">First Name</label>
-      <input id="firstName" name="firstName" placeholder="Thor" required type="text">
-      <label for="lastName">Last Name</label>
-      <input id="lastName" name="lastName" placeholder="Odinson" required type="text">
-      <label for="email">Email</label>
-      <input id="email" name="email" placeholder="thorodinson@asgard.com" required type="email">
-      <label for="password">Password</label>
-      <input id="password" name="password" placeholder="" required type="password">
-      <label for="confirm-password">Confirm Password</label>
-      <input id="confirm-password" name="confirm-password" placeholder="" required type="password">
-      <button type="submit">Create Account</button>
-    </form>
-    <p>Already have an account? <a href="">Log in</a></p>
-  </div>
+<div class="container">
+  <img alt="Splash image for sign-up form" class="image" src="/img/photo-1585202900225-6d3ac20a6962.avif">
+  <form id="create-account" action="" method="post">
+    <div class="form-heading">
+      <h1 class="heading">This is not a real online service! You know you need something like this in your life to
+        help you realize your deepest dreams.</h1>
+      <h2 class="subheading">You <em>know</em> you want to.</h2>
+      <div class="form-container">
+        <h2 class="form-title">Let's do this!</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" placeholder="Thor" required type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" placeholder="Odinson" required type="text">
+          </div>
+          <div class="form-group">
+            <label for="telephone">Phone Number</label>
+            <input id="telephone" name="telephone" placeholder="6264206969" required type="tel">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="thorodinson@asgard.com" required type="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" placeholder="" required type="password">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input id="confirm-password" name="confirm-password" placeholder="" required type="password">
+          </div>
+        </div>
+      </div>
+      <button class="create-account" type="submit" form="create-account">Create Account</button>
+    </div>
+    <p class="login-button">Already have an account? <a href="">Log in</a></p>
+  </form>
 </div>
 </body>
 <script src="/js/app.js"></script>
